@@ -1,5 +1,101 @@
 {
  "updated": "2026-11-16",
- "modules": {},
- "summary": { "done": 0, "total": 55, "last_activity": null }
+ "modules": {
+  "m0": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m1": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m2": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m3": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m4": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m5": {
+   "done": 0,
+   "total": 4,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m6": {
+   "done": 0,
+   "total": 3,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m7": {
+   "done": 0,
+   "total": 3,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m8": {
+   "done": 0,
+   "total": 4,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m9": {
+   "done": 0,
+   "total": 3,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m10": {
+   "done": 0,
+   "total": 4,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m11": {
+   "done": 0,
+   "total": 4,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  },
+  "m12": {
+   "done": 0,
+   "total": 5,
+   "status": "planned",
+   "completed": null,
+   "last_activity": null
+  }
+ },
+ "summary": {
+  "done": 0,
+  "total": 55,
+  "last_activity": null
+ }
 }
