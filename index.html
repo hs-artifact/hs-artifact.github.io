@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
 <title>Hendro Sutrisno: industrial data and digitalization</title>
 <meta name="description" content="Hendro Sutrisno: 15+ years turning field operations in oil & gas and mining into data that people trust. Portfolio, field impact and a build log of shipped work.">
 <meta property="og:title" content="Hendro Sutrisno: industrial data and digitalization">
@@ -25,7 +26,8 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--f);-webkit-font-smoothing:antialiased}
-.fig,.yr,.creds p{font-variant-numeric:tabular-nums}
+.fig,.yr{font-variant-numeric:tabular-nums}
+.fig small{font-variant-numeric:normal}
 a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px}
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
@@ -194,19 +196,27 @@ footer{padding:88px 0 40px;border-top:2px solid var(--ink)}
 
 <section id="impact"><div class="wrap">
   <h2>Results from real operations</h2>
-  <p class="sub">The work that taught me why data projects succeed or fail on site. Client data stays with the client; the patterns live in FieldTrust.</p>
+  <p class="sub">The work that taught me why data projects succeed or fail on site. Company data stays with the company; the patterns live in FieldTrust.</p>
   <div class="cases">
     <article class="case">
       <div class="fig">50 → 80%<small>adoption of weigh-in-motion tonnage</small></div>
-      <div><h3>Weigh-in-motion brought into the regulator's accuracy class</h3><p>At a large coal operation in Kalimantan, I calibrated WIM tonnage against independent references until it met the accuracy class. Adoption rose once crews trusted the number.</p><p class="ctx">Mining, data quality, adoption</p></div>
+      <div><h3>Weigh-in-motion brought into the regulator's accuracy class</h3><p>At a large coal operation in Kalimantan, I calibrated WIM tonnage against independent references until it met the accuracy class, across 2,500 to 3,500 weighings a day. Adoption rose once crews trusted the number.</p><p class="ctx">Mining, data quality, adoption</p></div>
     </article>
     <article class="case">
       <div class="fig">−20%<small>false fatigue alarms, same coverage</small></div>
-      <div><h3>Fewer false alarms, so drivers stopped ignoring them</h3><p>Tuned driver-fatigue alerting with operators and supervisors. Alarm adoption went from 75% to 90%.</p><p class="ctx">Safety technology, change management</p></div>
+      <div><h3>Fewer false alarms, so drivers stopped ignoring them</h3><p>Tuned driver-fatigue thresholds with operators and supervisors, validated on 38,260 frames. Alarm adoption went from 75% to 90%.</p><p class="ctx">Safety technology, change management</p></div>
+    </article>
+    <article class="case">
+      <div class="fig">3 → 1<small>upstream data domains in one pipeline</small></div>
+      <div><h3>One regional pipeline for production, drilling and well-intervention data</h3><p>At Pertamina Hulu Indonesia I designed the unified pipeline and the data marts built on it: production performance, lifting, forecast, lost production opportunity and maintenance. I was also SME for the hydrocarbon accounting upgrade and for smart monitoring on PI Asset Framework.</p><p class="ctx">Oil &amp; gas, data engineering, governance</p></div>
     </article>
     <article class="case">
       <div class="fig">187<small>applications carried through the handover</small></div>
-      <div><h3>The Mahakam operator transition, without disrupting production</h3><p>Subject-matter expert for the application estate while Indonesia's Mahakam block moved between operators.</p><p class="ctx">Oil &amp; gas, transition, governance</p></div>
+      <div><h3>The Mahakam operator transition, without disrupting production</h3><p>SME Coordinator for the application estate while Indonesia's Mahakam block moved from TotalEnergies to Pertamina.</p><p class="ctx">Oil &amp; gas, transition, governance</p></div>
+    </article>
+    <article class="case">
+      <div class="fig">14 → 3<small>days to ship a centralized release</small></div>
+      <div><h3>Releases that used to take two weeks shipped in three days</h3><p>At TotalEnergies, standard QC with SCCM and Jenkins automation cut centralized deployments from about 14 days to 3, and distributed ones from about 3 days to 1, across some 390 applications on 90 production servers.</p><p class="ctx">Oil &amp; gas, automation, operations</p></div>
     </article>
   </div>
 </div></section>
@@ -217,11 +227,11 @@ footer{padding:88px 0 40px;border-top:2px solid var(--ink)}
   <div class="tbl"><table>
     <thead><tr><th>Capability</th><th>Evidence</th><th>Fits</th></tr></thead>
     <tbody>
-      <tr><td><b>Production data and hydrocarbon accounting</b><span class="d">Allocation, reconciliation, period close</span></td><td><a href="https://github.com/hs-artifact/fieldtrust">FieldTrust</a> allocation and reconciliation modules</td><td class="fits">Petroleum / HCA data analyst, senior data engineer</td></tr>
-      <tr><td><b>Data engineering</b><span class="d">SQL, Python, idempotent pipelines, dbt, orchestration</span></td><td>FieldTrust <code>pipeline/</code> and <code>tests/</code></td><td class="fits">Senior data engineer</td></tr>
-      <tr><td><b>OT/IT data</b><span class="d">Historians (PI AF), SCADA tags, MQTT, ISA-95</span></td><td>Fifteen years on site, FieldTrust MQTT ingestion</td><td class="fits">Senior data engineer, industrial data</td></tr>
-      <tr><td><b>Data quality and governance</b><span class="d">Contracts, DQ scorecards, glossary, golden record</span></td><td>FieldTrust <code>governance/</code></td><td class="fits">Data governance, digitalization manager</td></tr>
-      <tr><td><b>Digital transformation and adoption</b><span class="d">People, process, technology; stage gates; value cases</span></td><td>The results above</td><td class="fits">Digitalization manager</td></tr>
+      <tr><td><b>Production data and hydrocarbon accounting</b><span class="d">Allocation, reconciliation, period close</span></td><td>Hydrocarbon accounting upgrade at Pertamina Hulu Indonesia; <a href="https://github.com/hs-artifact/fieldtrust">FieldTrust</a> allocation and reconciliation modules</td><td class="fits">Petroleum / HCA data analyst, senior data engineer</td></tr>
+      <tr><td><b>Data engineering</b><span class="d">SQL, Python, idempotent pipelines, dbt, orchestration</span></td><td>Regional upstream pipeline and data marts at Pertamina Hulu Indonesia; FieldTrust <code>pipeline/</code> and <code>tests/</code></td><td class="fits">Senior data engineer</td></tr>
+      <tr><td><b>OT/IT data</b><span class="d">Historians (PI AF), SCADA tags, MQTT, ISA-95</span></td><td>AVEVA PI, OPC and PDMS integrations at Pertamina Hulu Mahakam; PI Asset Framework smart monitoring</td><td class="fits">Senior data engineer, industrial data</td></tr>
+      <tr><td><b>Data quality and governance</b><span class="d">Contracts, DQ scorecards, glossary, golden record</span></td><td>Automated quality controls and application cartography; FieldTrust <code>governance/</code></td><td class="fits">Data governance, digitalization manager</td></tr>
+      <tr><td><b>Digital transformation and adoption</b><span class="d">People, process, technology; stage gates; value cases</span></td><td>The results above; COBIT 2019 audit readiness</td><td class="fits">Digitalization manager</td></tr>
     </tbody>
   </table></div>
 </div></section>
@@ -242,10 +252,10 @@ footer{padding:88px 0 40px;border-top:2px solid var(--ink)}
     </ul>
   </div>
   <ol class="strat">
-    <li class="layer" style="--y:4"><div class="yr">2022 – 2026</div><div class="rock coal"></div><div class="what"><b>Head of Digital Sustainability Operation</b><span>GEMS / Borneo Indobara (Sinarmas Mining), Kalimantan</span><em>Weigh-in-motion, fatigue alerting, operational dashboards</em></div></li>
-    <li class="layer" style="--y:1"><div class="yr">2021 – 2022</div><div class="rock sand"></div><div class="what"><b>Senior System &amp; Data Engineer</b><span>Pertamina Hulu Indonesia</span></div></li>
-    <li class="layer" style="--y:3"><div class="yr">2018 – 2021</div><div class="rock sand"></div><div class="what"><b>Senior System Engineer</b><span>Pertamina Hulu Mahakam</span><em>Regional CIP Gold Medal</em></div></li>
-    <li class="layer" style="--y:6"><div class="yr">2011 – 2017</div><div class="rock sand"></div><div class="what"><b>Application Support &amp; System Engineer</b><span>TOTAL E&amp;P Indonesie</span><em>Subject-matter expert for 187 applications in the Mahakam transition</em></div></li>
+    <li class="layer" style="--y:4"><div class="yr">2022 – 2026</div><div class="rock coal"></div><div class="what"><b>Head of Digital Sustainability Operation</b><span>GEMS / Borneo Indobara (Sinarmas Mining), South Kalimantan</span><em>Deputy Head in 2024 and Senior Business Demand Analyst in 2022–2023 before that. Ran fleet management on ~800 units, weigh-in-motion, collision avoidance on ~794 haul units and fatigue monitoring 24x7 at ~98% availability.</em></div></li>
+    <li class="layer" style="--y:1.6"><div class="yr">2021 – 2022</div><div class="rock sand"></div><div class="what"><b>Data &amp; System Analyst</b><span>Pertamina Hulu Indonesia</span><em>Regional upstream data pipeline, data marts and dashboards; hydrocarbon accounting upgrade; PI Asset Framework monitoring.</em></div></li>
+    <li class="layer" style="--y:3"><div class="yr">2018 – 2021</div><div class="rock sand"></div><div class="what"><b>IT Senior System Engineer</b><span>Pertamina Hulu Mahakam</span><em>Production-estimation data across AVEVA PI, OPC and PDMS; application cartography for disaster recovery; IOC SKK Migas focal point; Regional CIP Gold Medal.</em></div></li>
+    <li class="layer" style="--y:6"><div class="yr">2011 – 2017</div><div class="rock sand"></div><div class="what"><b>IT Application Support &amp; System Engineer</b><span>TotalEnergies (TOTAL E&amp;P Indonesie)</span><em>About 390 applications on 90 production servers; SME Coordinator for 187 applications in the Mahakam transition.</em></div></li>
     <li class="layer" style="--y:2"><div class="yr">2008 – 2010</div><div class="rock shale"></div><div class="what"><b>Java Developer</b><span>PT TransData</span></div></li>
   </ol>
   <p class="strat-note">Deeper is older. Layer thickness follows years in the role.</p>
@@ -253,7 +263,10 @@ footer{padding:88px 0 40px;border-top:2px solid var(--ink)}
   <div class="creds">
     <div><h3>Professional Scrum Product Owner I</h3><p>Scrum.org, 2025</p></div>
     <div><h3>Pengawas Operasional Pertama (POP) Minerba</h3><p>BNSP, 2024, valid to 2029</p></div>
-    <div><h3>S1 Information Systems</h3><p>STIKOM Surabaya, 2002 – 2008</p></div>
+    <div><h3>Data Science Fundamentals for Data Analytics</h3><p>Algoritma Data Science School, 2021</p></div>
+    <div><h3>BMC Accredited Administrator, Atrium CMDB 9.1</h3><p>BMC Software, 2018</p></div>
+    <div><h3>Bachelor of Information Systems</h3><p>STIKOM Surabaya, 2002 – 2008</p></div>
+    <div><h3>Languages</h3><p>Indonesian, native. English, working proficiency.</p></div>
   </div>
 </div></section>
 </main>
