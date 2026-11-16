@@ -119,9 +119,19 @@ td code{font:500 .9em var(--f);background:var(--wash);padding:1px 5px;border-rad
 .creds h3{font-size:1rem;margin:0 0 4px}
 .creds p{margin:0;color:var(--muted);font-size:.92rem}
 
-footer{padding:72px 0 88px;border-top:1px solid var(--rule)}
-footer h2{max-width:22ch}
-footer .sync{margin-top:48px;font-size:.84rem;color:var(--muted)}
+footer{padding:88px 0 40px;border-top:2px solid var(--ink)}
+.close{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:64px;align-items:start}
+.close h2{font-size:clamp(2rem,4.2vw,3rem);letter-spacing:-.03em;margin:0 0 16px}
+.close p{color:var(--muted);max-width:40ch;margin:0}
+.tblock{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ink)}
+.tblock div{padding:14px 18px 16px}
+.tblock .wide{grid-column:1/-1;border-bottom:1px solid var(--ink)}
+.tblock div:nth-child(2){border-right:1px solid var(--ink)}
+.tblock span{display:block;font-size:.82rem;color:var(--muted);margin-bottom:4px}
+.tblock a,.tblock b{font-size:1.05rem;font-weight:500;color:var(--ink);text-decoration:none}
+.tblock .wide a{font-size:clamp(1.15rem,2.2vw,1.45rem);font-weight:700;letter-spacing:-.01em}
+.tblock a:hover{text-decoration:underline}
+.colophon{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:80px;padding-top:18px;border-top:1px solid var(--rule);font-size:.84rem;color:var(--muted)}
 
 @media (max-width:860px){
   nav{display:none}
@@ -132,6 +142,9 @@ footer .sync{margin-top:48px;font-size:.84rem;color:var(--muted)}
   .layer{grid-template-columns:64px 40px minmax(0,1fr);gap:0 14px}
   .strat-note{margin-left:0}
   .creds{grid-template-columns:1fr;gap:20px}
+  .close{grid-template-columns:1fr;gap:32px}
+  .tblock{grid-template-columns:1fr}
+  .tblock div:nth-child(2){border-right:0;border-bottom:1px solid var(--ink)}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
@@ -246,10 +259,18 @@ footer .sync{margin-top:48px;font-size:.84rem;color:var(--muted)}
 </main>
 
 <footer id="contact"><div class="wrap">
-  <h2>Hiring for industrial data in Indonesia, Malaysia or the Middle East?</h2>
-  <p class="sub">I'm looking at senior data engineer, petroleum or hydrocarbon data analyst, and digitalization manager roles.</p>
-  <div class="cta"><a class="btn primary" href="mailto:hendro.sutrisno@outlook.com">hendro.sutrisno@outlook.com</a><a class="btn" href="https://github.com/hs-artifact">github.com/hs-artifact</a></div>
-  <p class="sync">Built and tested in public.</p>
+  <div class="close">
+    <div>
+      <h2>Contact</h2>
+      <p>Senior data engineering, hydrocarbon data and digitalization roles in Indonesia, Malaysia and the Middle East. Email reaches me fastest.</p>
+    </div>
+    <div class="tblock">
+      <div class="wide"><span>Email</span><a href="mailto:hendro.sutrisno@outlook.com">hendro.sutrisno@outlook.com</a></div>
+      <div><span>Code</span><a href="https://github.com/hs-artifact">github.com/hs-artifact</a></div>
+      <div><span>Based in</span><b>Balikpapan, Indonesia (UTC+8)</b></div>
+    </div>
+  </div>
+  <div class="colophon"><span>© 2026 Hendro Sutrisno</span><span>Built and tested in public</span></div>
 </div></footer>
 
 <script>
